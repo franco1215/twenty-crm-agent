@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twenty CRM Agent</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header>
+    <h1>Twenty CRM Agent</h1>
+    <span class="badge">LangGraph + GraphQL</span>
+  </header>
+
+  <div id="chat-container">
+    <div class="message agent">
+      <p>Hello! I'm your CRM assistant. I can help you query and manage data in Twenty CRM.</p>
+      <p>Try asking me:</p>
+      <ul>
+        <li>List all companies</li>
+        <li>Show open opportunities</li>
+        <li>Find people at company X</li>
+        <li>Create a new note for...</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="input-area">
+    <form id="input-form">
+      <input
+        id="input-field"
+        type="text"
+        placeholder="Ask about your CRM data..."
+        autocomplete="off"
+        autofocus
+      >
+      <button id="send-btn" type="submit">Send</button>
+    </form>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
